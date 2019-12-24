@@ -177,7 +177,9 @@ a.desc { font-family: "Open Sans"; font-size: 20px; font-style: normal;
 font-variant: normal; font-weight: 400; line-height: 40px; color: #2D3238;}
 p.desc { font-family: "Open Sans"; font-size: 20px; font-style: normal;
 font-variant: normal; font-weight: 400; line-height: 40px; color: #2D3238;}
-
+a.dropdown-item{
+  color: black;
+}
 footer {
   color: white;
   margin: 0;
