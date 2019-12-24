@@ -15,28 +15,20 @@ class AboutHandler(webapp2.RequestHandler):
         template = env.get_template('templates/about.html')
         self.response.write(template.render())
 
-class MemeHandler(webapp2.RequestHandler):
+class PortfolioHandler(webapp2.RequestHandler):
     def get(self):
-        template = env.get_template('templates/example.html')
+        template = env.get_template('templates/portfolio.html')
         self.response.write(template.render())
 
-# class RunHandler(webapp2.RequestHandler):
-#     def get(self):
-#         template = env.get_template('templates/run.html')
-#         self.response.write(template.render())
-#
-# class TroubleHandler(webapp2.RequestHandler):
-#     def get(self):
-#         template = env.get_template('templates/trouble.html')
-#         self.response.write(template.render())
-#
-# class GameoverHandler(webapp2.RequestHandler):
-#     def get(self):
-#         template = env.get_template('templates/gameover.html')
-#         self.response.write(template.render())
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('templates/contact.html')
+        self.response.write(template.render())
+
 
 app = webapp2.WSGIApplication([
     ('/' , MainHandler),
     ('/about' , AboutHandler),
-    ('/meme' , MemeHandler),
+    ('/portfolio' , PortfolioHandler),
+    ('/contact' , ContactHandler),
 ], debug = True)
