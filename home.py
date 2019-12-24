@@ -1,9 +1,20 @@
 import webapp2
 import jinja2
 import os
+import logging
+import datetime
+now = datetime.datetime.now()
 
-env = jinja2.Environment(
-    loader = jinja2.FileSystemLoader(os.path.dirname(__file__)))
+from google.appengine.api import images
+
+from google.appengine.api import users
+from google.appengine.ext import ndb
+
+jinja_env = jinja2.Environment(
+    loader = jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
