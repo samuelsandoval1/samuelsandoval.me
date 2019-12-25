@@ -173,7 +173,7 @@ div.categoryContainer {
 }
 a.desc { font-family: "Open Sans"; font-size: 20px; font-style: normal;
 font-variant: normal; font-weight: 400; line-height: 40px; color: #2D3238;
-margin-left: 3em}
+margin-left: 2em}
 p.desc { font-family: "Open Sans"; font-size: 20px; font-style: normal;
 font-variant: normal; font-weight: 400; line-height: 40px; color: #2D3238;
 margin-left: 3em}
@@ -201,8 +201,9 @@ ul{
   padding: 20px 0 20px 0;
 }
 
-.IMGS{
-  width:400px;
+img.proj{
+  width: 7%;
+  height: auto;
 }
 .ast-small-footer {
     border-top-style: solid;
