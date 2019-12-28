@@ -22,9 +22,104 @@ font-variant: normal; font-weight: 700; line-height: 15.4px; }
 h3 { display:block ; "Open Sans"; font-size: 30px; font-style: normal;
 font-variant: normal; font-weight: 700; line-height: 15.4px; color: #1a2a3a;
 }
+h4 { display:block ; "Open Sans"; font-size: 30px; font-style: normal;
+font-variant: normal; font-weight: 700; line-height: 15.4px; color: #1a2a3a;
+}
 
 /* This is the title font family*/
+header .row,
+footer .row {
+  display: auto;
+  align-items: flex-end;
+}
 
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://p2.piqsels.com/preview/348/29/220/code-coding-computer-developer.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+img.col-sm-8 {
+  width: 10%;
+  height= auto;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-6 {
+  width: 100%;
+  justify-content: auto;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
 
 img{
   width: 50%;
@@ -52,7 +147,7 @@ li{
   }
 
 img.navbar-brand{
-    width: 10%;
+    width: 15%;
     height: auto;
   }
 
@@ -134,7 +229,7 @@ img.navbar-brand{
   background-color: #F5F5F5;
 }
 img.main{
-  width: 70%;
+  width: 50%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -196,7 +291,7 @@ footer {
 
 ul{
   list-style: none;
-  border:1px solid #00f74a;
+  border:0px solid #00f74a;
   border-radius: 20px;
   padding: 20px 0 20px 0;
 }
