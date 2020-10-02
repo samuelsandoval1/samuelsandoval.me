@@ -9,5 +9,5 @@
 
 Developed with 🔥 by [samuelsandoval1][site]
 
-[site]: http://samuelsandoval.,e/
+[site]: http://samuelsandoval.me/
 [bmac]: http://buymeacoff.ee/samuelsandoval
