@@ -1,5 +1,5 @@
 # SamuelSandoval1's Website 🎆
-> The official website of EthanThatOneKid
+> The official website of SamuelSandoval1
 
 ## Deployments 🚀
 * Visit the live site [here][site]!
