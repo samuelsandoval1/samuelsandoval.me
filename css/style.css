@@ -234,13 +234,14 @@ h1 {
 
 .project-area {
   background: #79b8ff;
+  
 }
 
 .project-title {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-left: 150px;
+  margin-left: 10rem;
   text-transform: uppercase;
 }
 
@@ -249,13 +250,13 @@ h1 {
   font: 1.3rem;    
   font-style: italic !important;
   font-weight: 700;    
-  margin-left: 150px;
+  margin-left: 10rem;
   text-transform: uppercase;
 }
 
 .project-p {
   color: #fff;
-  margin-left: 150px;
+  margin-left: 10rem;
 }
 
 /* comment section */

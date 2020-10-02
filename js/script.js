@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.header').height($(window).height());
 })
 
@@ -26,7 +26,7 @@ function addRandomFact() {
     //  * @param {any} toRotate This parameter is always needed.
     //  * @param {number} period This paramter is always needed.
 
-    let textBeingTyped = function(element, toRotate, period) {
+    let textBeingTyped = function (element, toRotate, period) {
         this.toRotate = toRotate;
         this.element = element;
         this.loopNum = 0;
@@ -36,7 +36,7 @@ function addRandomFact() {
         this.isDeleting = false;
     };
 
-    textBeingTyped.prototype.tick = function() {
+    textBeingTyped.prototype.tick = function () {
         let i = this.loopNum % this.toRotate.length;
         let fullTxt = this.toRotate[i];
 
@@ -62,13 +62,13 @@ function addRandomFact() {
             delta = 500;
         }
 
-        setTimeout(function() {
+        setTimeout(function () {
             that.tick();
         }, delta);
     };
 
 
-    window.onload = function() {
+    window.onload = function () {
         let elements = document.getElementsByClassName('typewrite');
         for (let element of elements) {
             const toRotate = element.getAttribute('data-type');
