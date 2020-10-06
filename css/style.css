@@ -3,13 +3,13 @@
 /* General Page Styling */
 
 #content {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
 }
 
 body {
-  margin: 0;  
+  margin: 0;
   padding: 0;
 }
 
@@ -18,19 +18,19 @@ html {
 }
 
 .btn {
-  background-color: #ffffff;  
+  background-color: #ffffff;
   border: 2px solid #79b8ff;
   color: #333;
   display: block;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  margin: 30px 0;  
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 0;
   margin-top: 20px;
   overflow: hidden;
   padding: 14px 60px;
   position: relative;
-  transition: 1s all ease;  
-  text-decoration: none;   
+  transition: 1s all ease;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -40,13 +40,12 @@ html {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transition: all 0.6s ease;
   z-index: -1;
-
 }
 
-.btn1::before {  
+.btn1::before {
   height: 100%;
   width: 0%;
 }
@@ -56,22 +55,22 @@ html {
 }
 
 button:hover {
-    transform: translate(4px, 4px) scale(1.10);
+  transform: translate(4px, 4px) scale(1.1);
 }
 
 #greeting-container {
   margin-top: 20px;
 }
 .space1 {
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .space2 {
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .space4 {
-  margin-top:100px;
+  margin-top: 100px;
 }
 /*--- navigation bar ---*/
 
@@ -80,26 +79,25 @@ button:hover {
 }
 
 .nav-link,
-.navbar-brand {    
+.navbar-brand {
   border: 0;
-  color: #fff;	
+  color: #fff;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: "Open Sans", sans-serif;
 }
 
 .login-text {
-  margin-top: 5px;    
+  margin-top: 5px;
   border: 0;
-  color: #fff;	
+  color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   line-height: inherit;
   margin-right: 1rem;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   white-space: nowrap;
 }
 
@@ -109,7 +107,7 @@ button:hover {
   width: 47px;
 }
 
-.icon2 {    
+.icon2 {
   border: 0;
   height: 50%;
   width: 30px;
@@ -135,44 +133,43 @@ h1 {
 }
 
 .header {
-  background-color: #79b8ff;	
+  background-color: #79b8ff;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-
 .description {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -55%);
-  text-align: center; 
+  text-align: center;
   top: 45%;
 }
 
 .description h1 {
   color: #494949;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .description a {
-  color: #fff;    
+  color: #fff;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;   	
+  font-family: "Open Sans", sans-serif;
   font-size: 3.3rem;
   font-style: italic !important;
   line-height: 1.5;
   text-decoration: none;
 }
 
-.typewrite > .wrap { 
+.typewrite > .wrap {
   border-right: 0.08em solid #fff;
 }
 
 /*--- about Sam section ---*/
 
 .sam-photo {
-  border-radius: 50%; 
+  border-radius: 50%;
   height: 200px;
   width: 200px;
 }
@@ -216,12 +213,11 @@ h1 {
   text-transform: uppercase;
 }
 
-.features, 
+.features,
 .form-control,
 .features input {
   border-radius: 0;
 }
-
 
 #fact-container {
   margin-top: 20px;
@@ -234,7 +230,14 @@ h1 {
 
 .project-area {
   background: #79b8ff;
-  
+}
+
+.project-header {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 10rem;
+  text-transform: uppercase;
 }
 
 .project-title {
@@ -247,9 +250,9 @@ h1 {
 
 .project-name {
   color: #fff;
-  font: 1.3rem;    
+  font: 1.3rem;
   font-style: italic !important;
-  font-weight: 700;    
+  font-weight: 700;
   margin-left: 10rem;
   text-transform: uppercase;
 }
@@ -263,9 +266,9 @@ h1 {
 
 .comment-name {
   color: #494949;
-  font-size: 1.3rem;    
+  font-size: 1.3rem;
   font-style: italic !important;
-  font-weight: 700;    
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -278,25 +281,25 @@ h1 {
   color: #494949;
 }
 
-#comments-list{
-    color:#fff;
-    font-size: 1rem;
-    line-height: 200%;
-    margin-left: 150px;
+#comments-list {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 200%;
+  margin-left: 150px;
 }
 
-.delete-comments{
-    color: #494949;
-    margin-left: 150px;
+.delete-comments {
+  color: #494949;
+  margin-left: 150px;
 }
 
 #input-form {
-    display: none;
+  display: none;
 }
 /* Chart */
 
-.poll-style{
-    margin-left: 50px;
+.poll-style {
+  margin-left: 50px;
 }
 
 /*--- footer ---*/
@@ -321,27 +324,26 @@ h1 {
 /*--- media queries ---*/
 
 @media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    transform: none;
+    text-align: center;
+    top: 10%;
+  }
 
-	.description {
-      left: 0;
-      padding: 0 15px;
-      position: absolute;
-      transform: none;
-      text-align: center; 		
-      top: 10%;
-	}
-	
-	.description h1 {
-	  font-size: 2em;
-	}
-	
-	.description p {
-	  font-size: 1.2rem;
-	}
-	
-	.features {
-	  margin: 0;
-	}
+  .description h1 {
+    font-size: 2em;
+  }
+
+  .description p {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    margin: 0;
+  }
 }
 
 /* Down Arrow */
@@ -359,13 +361,14 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   background-repeat: no-repeat;
 }
 
-.ca3-scroll-down-link {	
+.ca3-scroll-down-link {
   bottom: 0px;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   font-size: 70px;
-  height: 60px;	
-  left: 50%;	margin: 0px 0 0 -40px;
+  height: 60px;
+  left: 50%;
+  margin: 0px 0 0 -40px;
   line-height: 60px;
   position: absolute;
   text-align: center;
@@ -375,23 +378,47 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   z-index: 100;
 
   -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-  -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
-  animation:         ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  animation: ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 /*animated scroll arrow animation*/
 @-webkit-keyframes ca3_fade_move_down {
-  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
 @-moz-keyframes ca3_fade_move_down {
-  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -moz-transform:translate(0,20px); opacity: 0; }
+  0% {
+    -moz-transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
 @keyframes ca3_fade_move_down {
-  0%   { transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,20px); opacity: 0; }
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
