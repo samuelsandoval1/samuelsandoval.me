@@ -2,11 +2,11 @@
 
 /* General Page Styling */
 
-#content {
+/* #content {
   font-family: "Open Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 html, body {
   margin: 0;
@@ -14,7 +14,10 @@ html, body {
 }
 
 body, footer, .hero-body {
-  background-color: rgb(10, 25, 47) !important;
+  /* background-color: rgb(10, 25, 47) !important; */
+  background-color: #79b8ff !important;
+
+  
 }
 
 a {
@@ -27,7 +30,7 @@ a:hover {
 }
 
 p {
-  color: rgb(136, 146, 176);
+  color: rgb(255, 255, 255);
 }
 
 .title {
