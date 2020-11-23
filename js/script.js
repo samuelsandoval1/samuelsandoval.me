@@ -3,6 +3,7 @@ const COMMANDS = {
     help:
         'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>',
     about: "Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
+
     skills:
         '<span class="code">Languages:</span> C++, Python, Swift, JavaScript, TypeScript, HTML, CSS',
     education:
@@ -11,7 +12,7 @@ const COMMANDS = {
         '<strong class="header-name">Microsoft (May 2021)</strong><br><i>Incoming Explore Intern</i><br><strong class="header-name">Google (May 2020 - August 2020)</strong><br><i>STEP Intern</i>',
         // <strong class="header-name">Company (May 2020 - Aug. 2020)</strong><br><i>Title</i><br>
     projects:
-        '<strong class="header-name">NiceBreakers </strong><br><i> A web platform designed to make ice breakers fun! Built with Next.JS and Web Sockets </i><br><strong class="header-name">Techish </strong><br><i>A web application to match students to mentors in tech for virtual chats. Built with HTML/CSS, TypeScript and Java Servlets </i><br><strong class="header-name">Quizzler </strong><br><i>Developed an iOS mobile application that is a Trivia Questions Game. The questions rangefrom a variety of topics. Built with Xcode, Swift </i><br><strong class="header-name">SimpleChat </strong><br><i>A web application that allows users to converse with each other. Built using React.js and Firebase </i><br>',
+        '<strong class="header-name">NiceBreakers</strong><br><i> A web platform designed to make ice breakers fun! Built with Next.JS and Web Sockets </i><br><strong class="header-name">Techish </strong><br><i>A web application to match students to mentors in tech. Built with HTML/CSS, TypeScript and Java Servlets </i><br><strong class="header-name">Quizzler </strong><br><i>Developed an iOS mobile application that is a Trivia Questions Game. Built with Xcode, Swift </i><br><strong class="header-name">SimpleChat </strong><br><i>A web application that allows users to converse with each other. Built using React.js and Firebase </i><br>',
 
     };
     
