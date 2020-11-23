@@ -1,83 +1,75 @@
 $(document).ready(function () {
     $('.header').height($(window).height());
 })
+const BLACKLISTED_KEY_CODES = [38];
+const COMMANDS = {
+  help:
+    'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">corgi</span>',
+  about: "Hiya 👋 <br>I'm a Software Engineer that loves corgis.",
+  skills:
+    '<span class="code">Languages:</span> JavaScript, TypeScript, PHP, Java, Python, C, HTML, CSS',
+  education:
+    '<strong class="header-name">University of Central Florida</strong><br>B.S. Information Technology',
+  resume:
+    "<a href='./joey_colon_resume.pdf' class='success link'>resume.pdf</a>",
+  experience:
+    '<strong class="header-name">Uber (Jan. 2021 - Present)</strong><br><i>Software Engineer</i><br><strong class="header-name">Uber (May 2020 - Aug. 2020)</strong><br><i>Software Engineering Intern</i><br><strong class="header-name">Honey (Jan. 2020 - Mar. 2020)</strong><br><i>Software Engineering Intern</i><br> <strong class="header-name">LSQ (Jan. 2019 - April 2019)</strong> <br><i>Software Engineering Intern</i>',
+  corgi:
+    "My top 3 favorite corgis (click to view):<br><a href='https://www.instagram.com/bearorcorgi/' class='success link'>Bear</a>, <a href='https://www.instagram.com/lychee_the_corgi/' class='success link'>Mochee</a>, <a href='https://www.instagram.com/thecorgijack/' class='success link'>Jack</a>",
+};
+let userInput, terminalOutput;
 
-function addRandomFact() {
-    const facts =
-        ['I love making lattes',
-            ' I do concert lighting in my free time',
-            'I love surfing, and water sports',
-            'I love traveling',
-            'Football and lacrosse is my favorite sports',
-            'I am interested in Developer Relations',
-            'I love cooking',
-            'I am from Southern California'];
+const app = () => {
+  userInput = document.getElementById('userInput');
+  terminalOutput = document.getElementById('terminalOutput');
+  document.getElementById('dummyKeyboard').focus();
+  console.log('Application loaded');
+};
 
-    const fact = facts[Math.floor(Math.random() * facts.length)];
+const execute = function executeCommand(input) {
+  let output;
+  input = input.toLowerCase();
+  if (input.length === 0) {
+    return;
+  }
+  output = `<div class="terminal-line"><span class="success">➜</span> <span class="directory">~</span> ${input}</div>`;
+  if (!COMMANDS.hasOwnProperty(input)) {
+    output += `<div class="terminal-line">no such command: ${input}</div>`;
+    console.log('Oops! no such command');
+  } else {
+    output += COMMANDS[input];
+  }
 
-    const factContainer = document.getElementById('fact-container');
-    factContainer.innerText = fact;
-}
+  terminalOutput.innerHTML = `${terminalOutput.innerHTML}<div class="terminal-line">${output}</div>`;
+  terminalOutput.scrollTop = terminalOutput.scrollHeight;
+};
 
-//Typewriting Effect
-{
+const key = function keyEvent(e) {
+  const input = userInput.innerHTML;
 
-    //  * @param {any} element This parameter is always needed.
-    //  * @param {any} toRotate This parameter is always needed.
-    //  * @param {number} period This paramter is always needed.
+  if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
+    return;
+  }
 
-    let textBeingTyped = function (element, toRotate, period) {
-        this.toRotate = toRotate;
-        this.element = element;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.text = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+  if (e.key === 'Enter') {
+    execute(input);
+    userInput.innerHTML = '';
+    return;
+  }
 
-    textBeingTyped.prototype.tick = function () {
-        let i = this.loopNum % this.toRotate.length;
-        let fullTxt = this.toRotate[i];
+  userInput.innerHTML = input + e.key;
+};
 
-        if (this.isDeleting) {
-            this.text = fullTxt.substring(0, this.text.length - 1);
-        } else {
-            this.text = fullTxt.substring(0, this.text.length + 1);
-        }
+const backspace = function backSpaceKeyEvent(e) {
+  if (e.keyCode !== 8 && e.keyCode !== 46) {
+    return;
+  }
+  userInput.innerHTML = userInput.innerHTML.slice(
+    0,
+    userInput.innerHTML.length - 1
+  );
+};
 
-        this.element.innerHTML = '<span class="wrap">' + this.text + '</span>';
-
-        let that = this;
-        let delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.text === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.text === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
-
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
-
-
-    window.onload = function () {
-        let elements = document.getElementsByClassName('typewrite');
-        for (let element of elements) {
-            const toRotate = element.getAttribute('data-type');
-            const period = element.getAttribute('data-period');
-            if (toRotate) {
-                new textBeingTyped(element, JSON.parse(toRotate), period);
-            }
-        }
-        loadHome();
-        drawChart();
-    };
-}
+document.addEventListener('keydown', backspace);
+document.addEventListener('keypress', key);
+document.addEventListener('DOMContentLoaded', app);
