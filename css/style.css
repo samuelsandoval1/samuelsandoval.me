@@ -1,5 +1,4 @@
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
-
+/* fi
 /* General Page Styling */
 
 /* #content {
@@ -16,8 +15,6 @@ html, body {
 body, footer, .hero-body {
   /* background-color: rgb(10, 25, 47) !important; */
   background-color: #79b8ff !important;
-
-  
 }
 
 a {
