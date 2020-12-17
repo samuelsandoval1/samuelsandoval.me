@@ -1,9 +1,10 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
     help:
-        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>',
-    about: "Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
-
+        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">clear</span>',
+    about: 
+        "Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
+    
     skills:
         '<span class="code">Languages:</span> C++, Python, Swift, JavaScript, TypeScript, HTML, CSS',
     education:
@@ -32,10 +33,16 @@ const execute = function executeCommand(input) {
         return;
     }
     output = `<div class="terminal-line"><span class="success">➜</span> <span class="directory">~</span> ${input}</div>`;
-    if (!COMMANDS.hasOwnProperty(input)) {
+    if (input === 'clear'){
+        console.log('Clear command ran');
+        location.reload();
+    }
+    else if (!COMMANDS.hasOwnProperty(input)) {
         output += `<div class="terminal-line">no such command: ${input}</div>`;
         console.log('Oops! no such command');
-    } else {
+    }
+
+    else {
         output += COMMANDS[input];
     }
 
