@@ -1,7 +1,7 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
     help:
-        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">clear</span>',
+        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about: 
         "Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
     
@@ -14,6 +14,8 @@ const COMMANDS = {
         // <strong class="header-name">Company (May 2020 - Aug. 2020)</strong><br><i>Title</i><br>
     projects:
         '<strong class="header-name">NiceBreakers</strong><br><i> A web platform designed to make ice breakers fun! Built with Next.JS and Web Sockets </i><br><strong class="header-name">Techish </strong><br><i>A web application to match students to mentors in tech. Built with HTML/CSS, TypeScript and Java Servlets </i><br><strong class="header-name">Quizzler </strong><br><i>Developed an iOS mobile application that is a Trivia Questions Game. Built with Xcode, Swift </i><br><strong class="header-name">SimpleChat </strong><br><i>A web application that allows users to converse with each other. Built using React.js and Firebase </i><br>',
+    hobbies:
+        'Outside of school, I love making homemade coffee drinks like lattes, pour-over and others. I also do lighting for concerts and churches(pre-covid). When it comes to at home hobbies I love binging shows and movies on Netflix, my top 2 are Cobra Kai and The Umbrella Academy. Some of my outdoor hobbies include traveling, visiting coffee shops, and spending time at the beach.',
 
     };
     
