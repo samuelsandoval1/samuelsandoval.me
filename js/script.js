@@ -15,7 +15,7 @@ const COMMANDS = {
     projects:
         '<strong class="header-name">NiceBreakers</strong><br><i> A web platform designed to make ice breakers fun! Built with Next.JS and Web Sockets </i><br><strong class="header-name">Techish </strong><br><i>A web application to match students to mentors in tech. Built with HTML/CSS, TypeScript and Java Servlets </i><br><strong class="header-name">Quizzler </strong><br><i>Developed an iOS mobile application that is a Trivia Questions Game. Built with Xcode, Swift </i><br><strong class="header-name">SimpleChat </strong><br><i>A web application that allows users to converse with each other. Built using React.js and Firebase </i><br>',
     hobbies:
-        'Outside of school, I love making homemade coffee drinks like lattes, pour-over and others. I also do lighting for concerts and churches(pre-covid). When it comes to at home hobbies I love binging shows and movies on Netflix, my top 2 are Cobra Kai and The Umbrella Academy. Some of my outdoor hobbies include traveling, visiting coffee shops, and spending time at the beach.',
+        'I love making homemade coffee drinks like lattes, pour-over and others. I also do lighting for concerts and churches(pre-covid). When it comes to at home hobbies, I love binging shows and movies on Netflix, my top 2 are Cobra Kai and The Umbrella Academy. Some of my outdoor hobbies include traveling, visiting coffee shops, and spending time at the beach.',
 
     };
     
