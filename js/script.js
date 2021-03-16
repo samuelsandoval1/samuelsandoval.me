@@ -26,7 +26,24 @@ const app = () => {
     terminalOutput = document.getElementById('terminalOutput');
     document.getElementById('dummyKeyboard').focus();
     console.log('Application loaded');
+
+    //URL Redirects
+
+    if (window.location.href.endsWith("/#meme")){
+        window.location.assign("http://samuelsandoval1.github.io/meme-creator"); 
+    }
+    else if(window.location.href.endsWith("/sudoku-solver")){
+        window.location.replace("http://github.com/samuelsandoval1/Sudoku-Solver"); 
+    }
+    else if (window.location.href.endsWith("/#flashcard-app")){
+        window.location.assign("http://github.com/samuelsandoval1/Flashcard-App"); 
+    }
+    // if window.location.href == 
+    // window.location.replace("samuelsandoval1.github.io/meme-creator"); 
+
+
 };
+
 
 const execute = function executeCommand(input) {
     let output;
@@ -77,6 +94,7 @@ const backspace = function backSpaceKeyEvent(e) {
         userInput.innerHTML.length - 1
     );
 };
+
 
 document.addEventListener('keydown', backspace);
 document.addEventListener('keypress', key);
