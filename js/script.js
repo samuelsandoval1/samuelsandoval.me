@@ -42,10 +42,10 @@ const app = () => {
         window.open("http://github.com/samuelsandoval1/Sudoku-Solver");
     }
     else if (window.location.href.endsWith("/#flashcard-app")) {
-        window.open("http://github.com/samuelsandoval1/Flashcard-App");
+        window.open("http://github.com/samuelsandoval1/FlashcardApp");
     }
     else if (window.location.href.endsWith("/#Nicebreakers")) {
-        window.open("http://github.com/samuelsandoval1/Nicebreakers");
+        window.open("http://github.com/samuelsandoval1/NiceBreakers");
     }
     else if (window.location.href.endsWith("/#Techish")) {
         window.open("http://github.com/samuelsandoval1/Techish");
