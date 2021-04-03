@@ -19,7 +19,7 @@ const COMMANDS = {
         <strong class="header-name">NiceBreakers</strong><br><i> A web application designed to make ice breakers fun! Built with Next.JS and Web Sockets. View by typing /#Nicebreakers above in the domain.</i><br>\
         <strong class="header-name">Techish</strong><br><i>A web application to match students to mentors in tech. Built with HTML/CSS, TypeScript and Java Servlets. View by typing /#Techish above in the domain.</i><br>\
         <strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\
-        <strong class="header-name">Meme-Creator</strong><br><i>A web application that allows users to make memes! Built with  HTML/CSS, Javascript. View by typing /#meme-creator above in the domain/i><br>',
+        <strong class="header-name">Meme-Creator</strong><br><i>A web application that allows users to make memes! Built with  HTML/CSS, Javascript. View by typing /#meme-creator above in the domain. </i><br>',
     hobbies:
         'I love making homemade coffee drinks like lattes, pour-over and others. I also do lighting for concerts and churches(pre-covid). When it comes to at home hobbies, I love binging shows and movies on Netflix, my top 2 are Cobra Kai and All American. Some of my outdoor hobbies include traveling, visiting coffee shops, and spending time at the beach.',
 
