@@ -36,7 +36,7 @@ const app = () => {
     //URL Redirects
 
     if (window.location.href.endsWith("/#meme")) {
-        window.open("http://samuelsandoval1.github.io/meme-creator");
+        window.open("https://samuelsandoval1.github.io/MemeCreator/");
     }
     else if (window.location.href.endsWith("/#sudoku-solver")) {
         window.open("http://github.com/samuelsandoval1/Sudoku-Solver");
