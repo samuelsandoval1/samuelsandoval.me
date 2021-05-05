@@ -5,7 +5,9 @@ const COMMANDS = {
     help:
         'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
-        "Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
+        "Hey there! 👋🏼 <br> \
+        I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
+        I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
 
     skills:
         '<span class="code">Languages:</span> C++, Python, Swift, JavaScript, TypeScript, HTML, CSS',
@@ -21,7 +23,10 @@ const COMMANDS = {
         <strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\
         <strong class="header-name">Meme-Creator</strong><br><i>A web application that allows users to make memes! Built with  HTML/CSS, Javascript. View by typing /#meme-creator above in the domain. </i><br>',
     hobbies:
-        'I love making homemade coffee drinks like lattes, pour-over and others. I also do lighting for concerts and churches(pre-covid). When it comes to at home hobbies, I love binging shows and movies on Netflix, my top 2 are Cobra Kai and All American. Some of my outdoor hobbies include traveling, visiting coffee shops, and spending time at the beach.',
+        '- Making/Drinking Coffee Lattes <br>\
+         - Doing lighting for concerts and churches. <br>\
+         - Building small hacks using the latest tech on my own or at hackathons <br>\
+         - Playing games like Minecraft with friends',
 
 };
 
