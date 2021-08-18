@@ -18,8 +18,8 @@ const COMMANDS = {
 
     extracurriculars:
         '<strong class="header-name">TuffyHacks - CEO & Cofounder (2020-Present): </strong><br><i>Led the direction and execution for CSU Fullertons student-run hasckathon.</i><br>\
-        <strong class="header-name">acmCSUF - acmDev Director (2020-2021): </strong><br><i>Created path(committee) under acmCSUF that focused on connecting students to projects.</i>\
-        <strong class="header-name">SHPE at CSUF - Webmaster (2020-2021): </strong><br><i>Improved the website accessibility for the chapter website.</i>',
+        <strong class="header-name">acmCSUF - acmDev Director (2020-2021): </strong><br><i>Created path(committee) under acmCSUF that focused on connecting students to projects.</i><br>\
+        <strong class="header-name">SHPE at CSUF - Webmaster (2020-2021): </strong><br><i>Improved the website accessibility for the chapter website.</i><br>',
     // <strong class="header-name">Org - Position (May 2020 - Aug. 2020)</strong><br><i>Description</i><br>
 
     hobbies:
