@@ -84,7 +84,7 @@ const execute = function executeCommand(input) {
         location.reload();
     }
     else if (!COMMANDS.hasOwnProperty(input)) {
-        output += `<div class="terminal-line">no such command: ${input}</div>`;
+        output += `<div class="terminal-line"> ${input}: command not found</div>`;
         console.log('Oops! no such command');
     }
 
