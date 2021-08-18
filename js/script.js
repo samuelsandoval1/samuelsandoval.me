@@ -6,7 +6,7 @@ const COMMANDS = {
         'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
         "Hey there! 👋🏼 <br> \
-        I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
+        I'm Sam, a junior  studying Computer Science at California State University, Fullerton. \
         I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
 
     skills:
@@ -14,7 +14,7 @@ const COMMANDS = {
     education:
         '<strong class="header-name">California State University, Fullerton</strong><br>B.S. Computer Science, Expected Grad: May 2023',
     experience:
-        '<strong class="header-name">Microsoft (May 2021)</strong><br><i>Incoming Explore Intern</i><br><strong class="header-name">Google (May 2020 - August 2020)</strong><br><i>STEP Intern</i>',
+        '<strong class="header-name">Microsoft (May 2021 - August 2021)</strong><br><i>Explore Intern</i><br><strong class="header-name">Google (May 2020 - August 2020)</strong><br><i>STEP Intern</i>',
     // <strong class="header-name">Company (May 2020 - Aug. 2020)</strong><br><i>Title</i><br>
     projects:
         '<strong class="header-name">Sudoku GUI Solver</strong><br><i>A Sudoku Solver that uses the backtracking algorithm, and has a GUI to play sudoku. Built using Python, and pygame. View by typing /#sudoku-solver above in the domain.</i><br>\
