@@ -3,7 +3,7 @@ const BLACKLISTED_KEY_CODES = [38];
 // Use \ for multi-line strings **
 const COMMANDS = {
     help:
-        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, , <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
+        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
         "Hey there! 👋🏼 <br> \
         I'm Sam, a junior  studying Computer Science at California State University, Fullerton. \
@@ -31,7 +31,7 @@ const COMMANDS = {
 
 
     skills:
-        '<span class="code">Languages:</span> C++, Python, Swift, JavaScript, TypeScript, HTML, CSS',
+        '<span class="code">Languages:</span> Design Thinking, Product Management, C++, Python, Swift, JavaScript, TypeScript, HTML, CSS, SQL',
 };
 
 let userInput, terminalOutput;
