@@ -3,7 +3,7 @@ const BLACKLISTED_KEY_CODES = [38];
 // Use \ for multi-line strings **
 const COMMANDS = {
     help:
-        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">extracurriculars</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
+        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, , <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
         "Hey there! 👋🏼 <br> \
         I'm Sam, a junior  studying Computer Science at California State University, Fullerton. \
@@ -15,12 +15,6 @@ const COMMANDS = {
     experience:
         '<strong class="header-name">Microsoft (May 2021 - August 2021)</strong><br><i>Explore Intern</i><br><strong class="header-name">Google (May 2020 - August 2020)</strong><br><i>STEP Intern</i>',
     // <strong class="header-name">Company (May 2020 - Aug. 2020)</strong><br><i>Title</i><br>
-
-    extracurriculars:
-        '<strong class="header-name">TuffyHacks - CEO & Cofounder (2020-Present): </strong><br><i>Led the direction and execution for CSU Fullertons student-run hasckathon.</i><br>\
-        <strong class="header-name">acmCSUF - acmDev Director (2020-2021): </strong><br><i>Created path(committee) under acmCSUF that focused on connecting students to projects.</i><br>\
-        <strong class="header-name">SHPE at CSUF - Webmaster (2020-2021): </strong><br><i>Improved the website accessibility for the chapter website.</i><br>',
-    // <strong class="header-name">Org - Position (May 2020 - Aug. 2020)</strong><br><i>Description</i><br>
 
     hobbies:
         '- Making/Drinking Coffee Lattes <br>\
