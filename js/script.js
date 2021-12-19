@@ -1,13 +1,18 @@
 const BLACKLISTED_KEY_CODES = [38];
 
 // Use \ for multi-line strings **
+
+
+
+// get specific text do data['key'], returns the JSON Value
+
 const COMMANDS = {
     help:
         'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
-        "Hey there! 👋🏼 <br> \
-        I'm Sam, a junior  studying Computer Science at California State University, Fullerton. \
-        I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management.",
+        't',
+
+    //about(),
 
     education:
         '<strong class="header-name">California State University, Fullerton</strong><br>B.S. Computer Science, Expected Grad: May 2023',
@@ -65,8 +70,16 @@ const app = () => {
 
 };
 
+async function fetchData(routeLink) {
+    var response = await fetch('http://api.samuelsandoval.me/' + routeLink);
+    let data =  await response.json();
+    data = JSON.stringify(data);
+    data = JSON.parse(data);
+   // console.log(data);
+    return data;
+}
 
-const execute = function executeCommand(input) {
+const execute = async function executeCommand(input) {
     let output;
     input = input.toLowerCase();
     if (input.length === 0) {
@@ -83,7 +96,18 @@ const execute = function executeCommand(input) {
     }
 
     else {
-        output += COMMANDS[input];
+        if (input.includes("help")) {
+            var modifiedInput = input += "_message";
+            const result = await fetchData(modifiedInput.toLowerCase());
+            output += result['text'];
+        }
+        else if (input.includes("about")) {
+            const result = await fetchData(input.toLowerCase());
+            output += result['text'];
+        }
+          
+    //    output += addResult(output);
+        //output += COMMANDS[input];
     }
 
     terminalOutput.innerHTML = `${terminalOutput.innerHTML}<div class="terminal-line">${output}</div>`;
