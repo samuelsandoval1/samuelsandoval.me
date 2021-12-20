@@ -43,7 +43,6 @@ const execute = async function executeCommand(input) {
         location.reload();
     }
     else {
-        //  projects, 
         if (input.includes("help")) {
             var modifiedInput = input += "_message";
             const result = await fetchData(modifiedInput.toLowerCase());
@@ -60,6 +59,12 @@ const execute = async function executeCommand(input) {
         else if (input.includes("experience")) {
             const result = await fetchData(input.toLowerCase());
             output += result['text'];
+        }
+        else if (input.includes("the gospel")) {
+            const result = await fetchData("gospel");
+            for (const textField in result){
+                output += result[textField];
+            }
         }
         else if (input.includes("projects")) {
             const result = await fetchData(input.toLowerCase());
