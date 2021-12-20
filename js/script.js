@@ -48,26 +48,18 @@ const app = () => {
     console.log('Application loaded');
 
     //URL Redirects
-
-    if (window.location.href.endsWith("/#meme")) {
-        window.open("https://samuelsandoval1.github.io/MemeCreator/");
+    if (window.location.href.endsWith("/#TuffyHacks")) {
+        window.open("https://tuffyhacks.com");
     }
-    else if (window.location.href.endsWith("/#sudoku-solver")) {
-        window.open("http://github.com/samuelsandoval1/Sudoku-Solver");
+    else if (window.location.href.endsWith("/#GPAide")) {
+        window.open("https://github.com/samuelsandoval1/223w-gp-aide");
     }
-    else if (window.location.href.endsWith("/#flashcard-app")) {
-        window.open("http://github.com/samuelsandoval1/FlashcardApp");
-    }
-    else if (window.location.href.endsWith("/#Nicebreakers")) {
-        window.open("http://github.com/samuelsandoval1/NiceBreakers");
-    }
-    else if (window.location.href.endsWith("/#Techish")) {
-        window.open("http://github.com/samuelsandoval1/Techish");
+    else if (window.location.href.endsWith("/#API")) {
+        window.open("http://github.com/samuelsandoval1/api.samuelsandoval.me");
     }
     else if (window.location.href.endsWith("/#Flix")) {
         window.open("http://github.com/samuelsandoval1/Flix");
     }
-
 };
 
 async function fetchData(routeLink) {
@@ -75,7 +67,6 @@ async function fetchData(routeLink) {
     let data =  await response.json();
     data = JSON.stringify(data);
     data = JSON.parse(data);
-   // console.log(data);
     return data;
 }
 
@@ -96,6 +87,7 @@ const execute = async function executeCommand(input) {
     }
 
     else {
+        //  projects, 
         if (input.includes("help")) {
             var modifiedInput = input += "_message";
             const result = await fetchData(modifiedInput.toLowerCase());
@@ -105,6 +97,23 @@ const execute = async function executeCommand(input) {
             const result = await fetchData(input.toLowerCase());
             output += result['text'];
         }
+        else if (input.includes("education")) {
+            const result = await fetchData(input.toLowerCase());
+            output += result['text'];
+        }
+        else if (input.includes("experience")) {
+            const result = await fetchData(input.toLowerCase());
+            output += result['text'];
+        }
+        else if (input.includes("projects")) {
+            const result = await fetchData(input.toLowerCase());
+            for (const project in result){
+                console.log(result[project]);
+                output += result[project];
+            }
+            output += result['text'];
+        }
+      
           
     //    output += addResult(output);
         //output += COMMANDS[input];
