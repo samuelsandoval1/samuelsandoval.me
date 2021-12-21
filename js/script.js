@@ -3,7 +3,6 @@ const BLACKLISTED_KEY_CODES = [38];
 let userInput, terminalOutput;
 
 
-
 const app = () => {
     userInput = document.getElementById('userInput');
     terminalOutput = document.getElementById('terminalOutput');
