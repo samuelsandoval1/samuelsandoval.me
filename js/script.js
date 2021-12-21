@@ -113,9 +113,6 @@ const backspace = function backSpaceKeyEvent(e) {
     );
 };
 
-function
-
-
 document.addEventListener('keydown', backspace);
 document.addEventListener('keypress', key);
 document.addEventListener('DOMContentLoaded', app);
