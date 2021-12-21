@@ -49,7 +49,9 @@
 							<div class="sidebar-header has-text-centered">
 								<img src="./images/memoji.png" class="sidebar-image" />
 								<h2 class="header-name">Samuel Sandoval</h2>
-								<h5>Innovator</h5>
+								<h5 id="header"></h5>
+								<write-and-delete timeout="500" speed="100"></write-and-delete>
+
 								<div class="social-icons">
 									<a href="https://www.linkedin.com/in/~samuel/"><i
 											class="fab fa-linkedin icon"></i></a>
@@ -106,5 +108,19 @@
 	</section>
 </body>
 <script src="/js/script.js"></script>
+<script src="/js/lib.js"></script>
+
+<script>
+ writeAndDelete(document.querySelector("#header"), [
+    `Product Manager`,
+    `CSUF Titan`,
+], {
+    timeout: 1000,
+    speed: 200,
+    loop: true,
+    errorQuota: 0.05,
+});
+
+</script>
 
 </html>
