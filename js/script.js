@@ -5,7 +5,7 @@ let userInput, terminalOutput;
 
 const COMMANDS = {
     help:
-        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, , <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
+        'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>',
     about:
         "Hey there! 👋🏼 <br> \
         I'm Sam, a junior  studying Computer Science at California State University, Fullerton. \
