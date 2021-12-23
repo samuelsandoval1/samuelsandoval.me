@@ -76,6 +76,7 @@ const execute = async function executeCommand(input) {
             output += result.project2;
             output += result.project3;
             output += result.project4;
+            output += result.scroll;
         }
         else{
             output += `<div class="terminal-line"> ${input}: command not found</div>`;
