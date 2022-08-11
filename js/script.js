@@ -63,7 +63,9 @@ const execute = async function executeCommand(input) {
         }
         else if (input.includes("experience")) {
             const result = await fetchResults(input.toLowerCase());
-            output += result.text;
+            output += result.exp1;
+            output += result.exp2;
+            output += result.exp3;
         }
         else if (input.includes("the gospel")) {
             const result = await fetchResults("gospel");
