@@ -27,7 +27,7 @@ const app = () => {
 
 
 const fetchResults = async function fetchData(routeLink) {
-    var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://api.samuelsandoval.me/'+ routeLink)}`);
+    var response = await fetch(`http://api.allorigins.win/get?url=${encodeURIComponent('http://api.samuelsandoval.me/'+ routeLink)}`);
     let data = await response.json();
     data = JSON.parse(data.contents);  
     print(data)  
@@ -62,10 +62,12 @@ const execute = async function executeCommand(input) {
             output += result.text;
         }
         else if (input.includes("experience")) {
+            print("in experience")
             const result = await fetchResults(input.toLowerCase());
+            print(result)
             output += result.exp1;
-            output += result.exp2;
-            output += result.exp3;
+            // output += result.exp2;
+            // output += result.exp3;
         }
         else if (input.includes("the gospel")) {
             const result = await fetchResults("gospel");
