@@ -29,7 +29,8 @@ const app = () => {
 const fetchResults = async function fetchData(routeLink) {
     var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://api.samuelsandoval.me/'+ routeLink)}`);
     let data = await response.json();
-    data = JSON.parse(data.contents);    
+    data = JSON.parse(data.contents);  
+    print(data)  
     return data;
 };
 
@@ -76,7 +77,6 @@ const execute = async function executeCommand(input) {
             output += result.project2;
             output += result.project3;
             output += result.project4;
-            output += result.project5;
             output += result.scroll;
         }
         else{
