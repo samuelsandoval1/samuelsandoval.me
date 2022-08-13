@@ -62,14 +62,10 @@ const execute = async function executeCommand(input) {
             output += result.text;
         }
         else if (input.includes("experience")) {
-            print("in experience")
-
-            output += '<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Digital/Technical Product Manager Intern</i><br><strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br><strong class="header-name"> Google (May 2020 - August 2020) </strong><br><i>STEP Intern</i><br>';
-           const result = await fetchResults(input.toLowerCase());
-
-            // output += result.exp1;
-            // output += result.exp2;
-            // output += result.exp3;
+            const result = await fetchResults(input.toLowerCase());
+            output += result.exp1;
+            output += result.exp2;
+            output += result.exp3;
         }
         else if (input.includes("the gospel")) {
             const result = await fetchResults("gospel");
