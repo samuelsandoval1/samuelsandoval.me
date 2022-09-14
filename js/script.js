@@ -30,7 +30,7 @@ const fetchResults = async function fetchData(routeLink) {
     var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://api.samuelsandoval.me/'+ routeLink)}`);
     let data = await response.json();
     data = JSON.parse(data.contents);  
-    print(data)  
+   // print(data)  
     return data;
 };
 
