@@ -5,18 +5,17 @@ let userInput, terminalOutput;
 const COMMANDS = {
     help:'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">clear</span>',
     
-    about: "Hey there! <br> I'm an undergraduate student  studying Computer Science at California State University, Fullerton (CSUF). \
-    I'm passionate about developing products and technologies that impact my community and people everywhere. <br><br> \
-    At CSUF,  you can catch me doing some work in the TSU, hanging out in the ECS Courtyard or at my favorite coffee shop in Fullerton.  \
-    While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br><br>\
+    about: "Hey there! <br> I'm an young professional working at Lumen as a Solutions Engineer. I recently graduated from Cal State Fullerton with a degree in Computer Science. \
+    I'm passionate about developing products and technologies that impact my community and people everywhere. <br>\
+    While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br>\
     I love learning about new ideas, technology or experiences, so feel free to reach out to me. <br><br>\
-    Let's <strong><a href='https://linkedin.com/in/~samuel/'>connect</a></strong><br><br> \
+    Let's <strong><a href='https://linkedin.com/in/samuelsandoval1/'>connect</a></strong><br><br> \
     <strong>Scroll up in the terminal.</strong>",
 
     education: '<strong class="header-name">California State University, Fullerton</strong><br>B.S. Computer Science, Expected Grad: May 2023',
     
     experience: 
-        '<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Digital/Technical Product Manager Intern</i><br>\ <strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br>\
+        '<strong class="header-name">Lumen (July 2023 - Present) </strong><br><i>Solution Support Associate</i><br>\<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Product Manager Intern</i><br> \ <strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br> \
         <strong class="header-name"> Google (May 2020 - August 2020) </strong><br><i>STEP Intern</i><br></br>',
     
     projects: 
