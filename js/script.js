@@ -5,7 +5,7 @@ let userInput, terminalOutput;
 const COMMANDS = {
     help:'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">clear</span>',
     
-    about: "Hey there! <br> I'm an young professional working at Lumen as a Solutions Engineer. I recently graduated from Cal State Fullerton with a degree in Computer Science. \
+    about: "Hey there! <br> I'm a young professional working at Lumen as a Solutions Engineer. I recently graduated from Cal State Fullerton with a degree in Computer Science. \
     I'm passionate about developing products and technologies that impact my community and people everywhere. <br>\
     While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br>\
     I love learning about new ideas, technology or experiences, so feel free to reach out to me. <br><br>\
