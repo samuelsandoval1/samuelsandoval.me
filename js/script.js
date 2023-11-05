@@ -5,17 +5,17 @@ let userInput, terminalOutput;
 const COMMANDS = {
     help:'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">clear</span>',
     
-    about: "Hey there! <br> I'm a young professional working at Lumen as a Solutions Engineer. I recently graduated from Cal State Fullerton with a degree in Computer Science. \
-    I'm passionate about developing products and technologies that impact my community and people everywhere. <br>\
+    about: "I’m an aspiring Product Manager with internship experience leading and working with empowered teams across a variety of B2C, and B2B companies. <br>\
+    During my internship experiences, I eagerly embraced opportunities to collaborate with cross-functional teams, where I learned the importance of user-centric product development and the formulation of effective product strategies. <br> \
+    I firmly believe in creating supportive and collaborative work environments that empower teams to excel. My goal is to continue honing my skills, both in terms of product management and leadership, to contribute to the success of the products I work on and the growth of the business. <br>\
     While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br>\
     I love learning about new ideas, technology or experiences, so feel free to reach out to me. <br><br>\
-    Let's <strong><a href='https://linkedin.com/in/samuelsandoval1/'>connect</a></strong><br><br> \
     <strong>Scroll up in the terminal.</strong>",
 
     education: '<strong class="header-name">California State University, Fullerton</strong><br>B.S. Computer Science, Expected Grad: May 2023',
     
     experience: 
-        '<strong class="header-name">Lumen (July 2023 - Present) </strong><br><i>Solution Support Associate</i><br>\<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Product Manager Intern</i><br> \ <strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br> \
+        '<strong class="header-name">Lumen (July 2023 - Present) </strong><br><i>Solutions Engineer</i><br>\<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Product Manager Intern</i><br> \ <strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br> \
         <strong class="header-name"> Google (May 2020 - August 2020) </strong><br><i>STEP Intern</i><br></br>',
     
     projects: 
