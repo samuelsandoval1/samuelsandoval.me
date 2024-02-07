@@ -5,7 +5,7 @@ let userInput, terminalOutput;
 const COMMANDS = {
     help:'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">clear</span>',
     
-    about: "I’m an Solution Engineer with internship experience leading and working with empowered teams across a variety of B2C, and B2B companies. <br>\
+    about: "I’m an Solutions Engineer with internship experience leading and working with empowered teams across a variety of B2C, and B2B companies. <br>\
     During my internship experiences, I eagerly embraced opportunities to collaborate with cross-functional teams, where I learned the importance of user-centric product development and the formulation of effective product strategies. <br> \
     I firmly believe in creating supportive and collaborative work environments that empower teams to excel. My goal is to continue honing my skills, both in terms of product management and leadership, to contribute to the success of the products I work on and the growth of the business. <br>\
     While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br>\
